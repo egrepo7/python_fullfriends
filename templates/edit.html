@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit Page</title>
+</head>
+<body>
+	<div id="container">
+		<form action="/friends/{{friend['id']}}" method='POST'>
+			<h4>Update User Info Here</h4>
+			<label>{{friend['first_name']}} -></label>
+				<input type="text" name="newfirst">
+			<label>{{friend['last_name']}} -></label>
+				<input type="text" name="newlast">
+			<label>{{friend['occupation']}} -></label>
+				<input type="text" name="newocc">
+				<input type="submit" value="UPDATE!">
+		</form>
+	</div>
+</body>
+</html>
